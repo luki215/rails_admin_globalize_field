@@ -19,15 +19,17 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'rails', '>= 5.0'
-  spec.add_dependency 'rails_admin', '>= 2.0'
+  spec.add_dependency 'rails', '>= 7.0'
+  spec.add_dependency 'rails_admin', '>= 3.0'
 
-  spec.add_dependency 'globalize', '>= 5.0'
+  spec.add_dependency 'globalize', '>= 6.2'
 
   spec.add_development_dependency 'capybara', '~> 3.29'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rspec-rails', '~> 3.8'
+  spec.add_development_dependency 'rspec-rails', '~> 6.0.3'
+  spec.add_development_dependency 'sprockets-rails'
+  spec.add_development_dependency 'sassc-rails'
   spec.add_development_dependency 'sqlite3'
 end

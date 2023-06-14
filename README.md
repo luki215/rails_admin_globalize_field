@@ -4,19 +4,21 @@ RailsAdminGlobalizeField adds tabbed interface to [rails_admin](https://github.c
 
 It adds custom field type that you can use for globalize's translations association.
 
+Version `>=2.0` supports Rails `>=7` & Rails admin `>=3`. 
+Check `1.X` if you need support older versions.
 
 ## Installation
 
 Add and configure globalize first.
 
 ``` ruby
-  gem 'globalize', '~> 5.0'
+  gem 'globalize', '~> 6.2.1'
 ```
 
 Add this gem and run `bundle`.
 
 ``` ruby
-  gem 'rails_admin_globalize_field', '~> 1.0'
+  gem 'rails_admin_globalize_field', '~> 2.0'
 ```
 
 
