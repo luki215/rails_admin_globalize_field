@@ -2,7 +2,7 @@
   <ul class="nav nav-tabs" style="margin-top:5px">
     <% field.tabs.each do |tab| %>
       <li class="<%= ('active' if tab.active?) %>">
-        <%= link_to tab.label, "#", data: { toggle: "tab",  target: "##{tab.id}" }, class: ('text-danger' unless tab.valid?) %>
+        <%= link_to tab.label, "#", data: { 'bs-toggle': "tab" }, href: "##{tab.id}", class: "nav-link #{'text-danger' unless tab.valid?} #{'active' if tab.active?}" %>
       </li>
     <% end %>
   </ul>
